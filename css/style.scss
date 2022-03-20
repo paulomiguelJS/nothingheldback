@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    text-decoration: none;
+}
+
+:root {
+    font-size: 100%;
+  }
+  
+  @import 'sass/colors';
+  @import 'sass/typography';
+  
+.border {
+    border: 1px solid red;
+  }
+  
+  @import 'sass/spacing';
+  @import 'sass/layout';
+  
+  .container {
+    width: 1440px;
+  
+    margin: 0 auto;
+  }

@@ -1,0 +1,19 @@
+{
+  "name": "nothing-held-back",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o css/ --recursive"
+    },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulomiguelJS/nothingheldback.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paulomiguelJS/nothingheldback/issues"
+  },
+  "homepage": "https://github.com/paulomiguelJS/nothingheldback#readme"
+}
