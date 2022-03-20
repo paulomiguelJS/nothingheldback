@@ -2,8 +2,36 @@ body {
   background-color: #4d4d4d;
 }
 
-.container {
-  width: 1440px;
+.register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 
-  margin: 0 auto;
+  background-color: $regular-blue;
+
+  padding: 1rem;
+}
+
+.register > button {
+  padding: 5px 15px;
+
+  border-radius: 12px;
+  border: none;
+
+  cursor: pointer;
+
+  letter-spacing: 1px;
+  color: $dark-grey;
+}
+
+.register > p {
+  color: $regular-white;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
 }

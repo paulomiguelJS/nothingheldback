@@ -18,7 +18,7 @@ h5,
 h6,
 p,
 a {
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: Roboto,'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .border {
@@ -634,13 +634,50 @@ body {
   background-color: #4d4d4d;
 }
 
-.container {
-  width: 1440px;
-  margin: 0 auto;
+.register {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  background-color: #2478cc;
+  padding: 1rem;
+}
+
+.register > button {
+  padding: 5px 15px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 1px;
+  color: #464E5B;
+}
+
+.register > p {
+  color: #ffffff;
+}
+
+.main-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .container {
-  width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
+  padding: 0 5px;
 }
 /*# sourceMappingURL=style.css.map */
