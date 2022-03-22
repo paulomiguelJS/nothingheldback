@@ -6,18 +6,16 @@
   text-decoration: none;
 }
 
+img {
+  display: block;
+  width: 100%;
+}
+
 :root {
   font-size: 100%;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-a {
+* {
   font-family: Roboto,'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -645,7 +643,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   gap: 1rem;
-  background-color: #2478cc;
+  background-color: #2478CC;
   padding: 1rem;
 }
 
@@ -675,8 +673,62 @@ body {
       flex-wrap: wrap;
 }
 
+.main-header > h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #000000;
+  letter-spacing: 2px;
+  gap: 5px;
+}
+
+.main-header > h2 > span {
+  color: #FFC700;
+  margin-bottom: 2px;
+}
+
+.search {
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  width: 100%;
+  min-width: 380px;
+  padding: 9px 4px 9px 40px;
+  background: #F4F4F4 url("../../assets/search-icon.svg.svg") no-repeat 13px center;
+}
+
+.hire-btn {
+  border: 1px solid #2478CC;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: bold;
+  width: 90px;
+  height: 26px;
+  padding: 2px 6px;
+  color: #2478CC;
+}
+
+.help-btn {
+  background: #FFC700;
+  border-radius: 4px;
+  border: none;
+  font-size: 10px;
+  font-weight: bold;
+  width: 90px;
+  height: 26px;
+  padding: 2px 6px;
+  color: #000000;
+}
+
 .container {
   max-width: 1440px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 5px;
 }

@@ -8,7 +8,7 @@ body {
   align-items: center;
   gap: 1rem;
 
-  background-color: $regular-blue;
+  background-color: $blue-regular;
 
   padding: 1rem;
 }
@@ -22,11 +22,11 @@ body {
   cursor: pointer;
 
   letter-spacing: 1px;
-  color: $dark-grey;
+  color: $grey-regular;
 }
 
 .register > p {
-  color: $regular-white;
+  color: $white-regular;
 }
 
 .main-header {
@@ -34,4 +34,67 @@ body {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.main-header > h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: $black-dark;
+
+  letter-spacing: 2px;
+
+  gap: 5px;
+}
+
+.main-header > h2 > span {
+  color: $yellow-regular;
+
+  margin-bottom: 2px;
+}
+
+
+ .search {
+  border: none;
+  border-radius: 4px;
+  outline: none;
+
+  width: 100%;
+  min-width: 380px;
+  padding: 9px 4px 9px 40px;
+
+  background: $grey-input url("../../assets/search-icon.svg.svg") no-repeat 13px center ;
+ }
+
+
+ .hire-btn {
+   border: 1px solid $blue-regular;
+   border-radius: 4px;
+
+   font-size: 10px;
+   font-weight: bold;
+
+   width: 90px;
+  height: 26px;
+
+  padding: 2px 6px;
+
+   color: $blue-regular;
+ }
+
+ .help-btn {
+  background: $yellow-regular;
+  border-radius: 4px;
+  border: none;
+
+  font-size: 10px;
+  font-weight: bold;
+
+  width: 90px;
+  height: 26px;
+
+  padding: 2px 6px;
+
+  color: $black-dark;
 }
