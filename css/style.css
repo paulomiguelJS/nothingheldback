@@ -643,7 +643,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   gap: 1rem;
-  background-color: #2478CC;
+  background-color: #2478cc;
   padding: 1rem;
 }
 
@@ -653,7 +653,7 @@ body {
   border: none;
   cursor: pointer;
   letter-spacing: 1px;
-  color: #464E5B;
+  color: #464e5b;
 }
 
 .register > p {
@@ -690,7 +690,7 @@ body {
 }
 
 .main-header > h2 > span {
-  color: #FFC700;
+  color: #ffc700;
   margin-bottom: 2px;
 }
 
@@ -701,22 +701,22 @@ body {
   width: 100%;
   min-width: 380px;
   padding: 9px 4px 9px 40px;
-  background: #F4F4F4 url("../../assets/search-icon.svg.svg") no-repeat 13px center;
+  background: #f4f4f4 url("../../assets/search-icon.svg.svg") no-repeat 13px center;
 }
 
 .hire-btn {
-  border: 1px solid #2478CC;
+  border: 1px solid #2478cc;
   border-radius: 4px;
   font-size: 10px;
   font-weight: bold;
   width: 90px;
   height: 26px;
   padding: 2px 6px;
-  color: #2478CC;
+  color: #2478cc;
 }
 
 .help-btn {
-  background: #FFC700;
+  background: #ffc700;
   border-radius: 4px;
   border: none;
   font-size: 10px;
@@ -830,7 +830,7 @@ body {
 }
 
 .fast-start h3 {
-  color: #014EFF;
+  color: #014eff;
 }
 
 .fast-start span {
@@ -847,7 +847,7 @@ body {
 .fast-start .days > li:nth-child(1) {
   font-weight: bold;
   font-size: 14px;
-  color: #2478CC;
+  color: #2478cc;
 }
 
 .help {
@@ -869,6 +869,76 @@ body {
   border-radius: 7px 7px 3px 3px;
   -webkit-box-shadow: 0px 0px 1px rgba(12, 26, 75, 0.24), 0px 3px 8px -1px rgba(50, 50, 71, 0.05);
           box-shadow: 0px 0px 1px rgba(12, 26, 75, 0.24), 0px 3px 8px -1px rgba(50, 50, 71, 0.05);
+}
+
+.help h3 {
+  color: #464e5b;
+  font-size: 24px;
+}
+
+.help span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 5px;
+  color: #000000;
+  font-weight: bold;
+  font-size: 8px;
+}
+
+.help span::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #49a55d;
+}
+
+.help h4 {
+  color: #0f131a;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.help p {
+  color: #393939;
+  font-size: 12px;
+  text-align: center;
+  width: 120px;
+}
+
+.help button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 5px;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 3px;
+  background-color: #49a55d;
+  color: #ffffff;
+  font-weight: 900;
+}
+
+.help span {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.help span a {
+  color: #014eff;
 }
 
 .main {

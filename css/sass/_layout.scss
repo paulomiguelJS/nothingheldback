@@ -183,15 +183,14 @@ body {
 
   .days > li {
     margin-top: 1rem;
-    
+
     &:nth-child(1) {
       font-weight: bold;
       font-size: 14px;
       color: $blue-regular;
     }
-  }  
+  }
 }
-
 
 .help {
   display: flex;
@@ -209,11 +208,74 @@ body {
   box-shadow: 0px 0px 1px rgba(12, 26, 75, 0.24),
     0px 3px 8px -1px rgba(50, 50, 71, 0.05);
 
-  
+  h3 {
+    color: $grey-regular;
+    font-size: 24px;
+  }
+
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 5px;
+
+    color: $black-dark;
+    font-weight: bold;
+    font-size: 8px;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+
+      background: #49a55d;
+    }
+  }
+
+  h4 {
+    color: $black-light;
+    font-weight: 900;
+    font-size: 20px;
+  }
+
+  p {
+    color: $grey-dark;
+    font-size: 12px;
+    text-align: center;
+
+    width: 120px;
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    gap: 5px;
+    padding: 10px 25px;
+
+    border: none;
+    border-radius: 3px;
+    background-color: $green-btn;
+
+    color: $white-regular;
+    font-weight: 900;
+    }
+
+    span {
+      font-size: 12px;
+      font-weight: 500;
+
+      a {
+        color: $blue-dark;
+      }
+  }
+
 
 }
-
-
 
 .main {
   width: 70%;
