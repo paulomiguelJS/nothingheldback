@@ -1,4 +1,8 @@
-* {
-  font-family: Roboto,'Open Sans', 'Helvetica Neue', sans-serif;
-}
+$roboto: "Roboto", sans-serif;
+$poppins: "Poppins", sans-serif;
+$inter: "Inter", sans-serif;
 
+
+*{
+  font-family: $roboto;
+}

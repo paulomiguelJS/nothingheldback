@@ -25,7 +25,7 @@ body {
   color: $grey-regular;
 
   &:hover {
-    opacity: .9;
+    opacity: 0.9;
   }
 }
 
@@ -47,6 +47,7 @@ body {
 
   color: $black-dark;
 
+  font-family: $poppins;
   letter-spacing: 2px;
 
   gap: 5px;
@@ -137,12 +138,11 @@ body {
   }
 }
 
-.main-header > p {
+.profile > p {
   font-size: 1rem;
   color: $black-dark;
-  span {
-    color: $black-dark;
 
+  span {
     font-weight: bold;
   }
 }
@@ -206,6 +206,7 @@ body {
   }
 
   h3 {
+    font-family: $inter;
     color: $blue-dark;
   }
 
@@ -267,6 +268,7 @@ input[type="range"]::-webkit-slider-thumb {
     0px 3px 8px -1px rgba(50, 50, 71, 0.05);
 
   h3 {
+    font-family: $poppins;
     color: $grey-regular;
     font-size: 24px;
   }
@@ -304,6 +306,7 @@ input[type="range"]::-webkit-slider-thumb {
   }
 
   h4 {
+    font-family: $inter;
     color: $black-light;
     font-weight: 900;
     font-size: 20px;
@@ -329,6 +332,7 @@ input[type="range"]::-webkit-slider-thumb {
     border-radius: 3px;
     background-color: $green-btn;
 
+    font-family: $inter;
     color: $white-regular;
     font-weight: 900;
 
@@ -374,6 +378,8 @@ input[type="range"]::-webkit-slider-thumb {
     gap: 5px;
     margin-bottom: 15px;
 
+    font-family: $poppins;
+
     font-size: 30px;
     font-weight: bold;
 
@@ -385,6 +391,7 @@ input[type="range"]::-webkit-slider-thumb {
   }
 
   p {
+    font-family: $poppins;
     color: $grey-regular;
     font-size: 18px;
   }
@@ -440,8 +447,31 @@ input[type="range"]::-webkit-slider-thumb {
 
 .main {
   width: 70%;
+
+  h1 {
+    font-family: $poppins;
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  .videowrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 46.25%;
+  }
+  
+  .videowrapper iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+  }
 }
 
-.midia {
-  height: 400px;
-}
+
+
+
