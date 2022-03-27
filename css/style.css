@@ -628,6 +628,11 @@ img {
   padding-bottom: 128px !important;
 }
 
+.bb-grey {
+  width: 100%;
+  border-bottom: 1px solid #e5e5e5;
+}
+
 .register {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -757,7 +762,6 @@ img {
 }
 
 .icons-header img {
-  cursor: pointer;
   cursor: pointer;
 }
 
@@ -1140,10 +1144,29 @@ input[type="range"]::-webkit-slider-thumb {
           justify-content: space-between;
 }
 
-.post h4 {
+.post .post-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 32px;
+}
+
+.post .post-info h4 {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   color: #2478cc;
+}
+
+.post .post-info p {
+  color: #606060;
+  font-size: 13px;
 }
 
 .post .post-down {
@@ -1182,6 +1205,132 @@ input[type="range"]::-webkit-slider-thumb {
   font-size: 8px;
   font-weight: 400;
   color: #606060;
+}
+
+.post-descrip {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.post-descrip .post-descrip-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.post-descrip .post-descrip-user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.post-descrip .post-descrip-user h5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #030303;
+  font-size: 14px;
+}
+
+.post-descrip .post-descrip-user h5::after {
+  content: "";
+  width: 15%;
+  height: 100%;
+  background: url("../../assets/correct.svg.svg") no-repeat center;
+}
+
+.post-descrip .post-descrip-user span {
+  margin-top: 2px;
+  color: #606060;
+  font-size: 12px;
+}
+
+.post-descrip .post-descrip-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.post-descrip .post-descrip-info p {
+  font-size: 12px;
+  margin-left: 15px;
+}
+
+.post-descrip .post-descrip-info p span {
+  color: #000000;
+  font-weight: bold;
+}
+
+.post-descrip p {
+  font-size: 15px;
+  line-height: 2rem;
+}
+
+.post-descrip span {
+  color: #1285ff;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.post-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.post-btns button:nth-child(1) {
+  border: 1px solid #1285ff;
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: #1285ff;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 25px;
+}
+
+.post-btns button:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: none;
+  background: none;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.post-btns button:nth-child(2)::after {
+  content: "";
+  background: url("../../assets/arrow.svg") no-repeat center;
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
 }
 
 .container {
