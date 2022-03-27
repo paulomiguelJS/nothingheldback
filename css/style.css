@@ -628,10 +628,6 @@ img {
   padding-bottom: 128px !important;
 }
 
-body {
-  background-color: #4d4d4d;
-}
-
 .register {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1122,6 +1118,7 @@ input[type="range"]::-webkit-slider-thumb {
   overflow: hidden;
   width: 100%;
   padding-top: 46.25%;
+  border-radius: 6px;
 }
 
 .main .videowrapper iframe {
@@ -1132,6 +1129,59 @@ input[type="range"]::-webkit-slider-thumb {
   bottom: 0;
   height: 100%;
   width: 100%;
+}
+
+.post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.post h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #2478cc;
+}
+
+.post .post-down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 250px;
+}
+
+.post .post-down button {
+  width: 100%;
+  max-width: 180px;
+  padding: 10px 5px;
+  margin-bottom: 10px;
+  border: 1px solid #1285ff;
+  border-radius: 5px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.post .post-down button a {
+  color: #1285ff;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.post .post-down span {
+  font-size: 8px;
+  font-weight: 400;
+  color: #606060;
 }
 
 .container {
