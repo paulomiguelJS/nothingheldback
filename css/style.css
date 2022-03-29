@@ -708,7 +708,7 @@ img {
   width: 100%;
   min-width: 380px;
   padding: 9px 4px 9px 40px;
-  background: #f4f4f4 url("../../assets/search-icon.svg.svg") no-repeat 13px center;
+  background: #f4f4f4 url("../../assets/search-icon.svg") no-repeat 13px center;
 }
 
 .search:focus {
@@ -1323,6 +1323,7 @@ input[type="range"]::-webkit-slider-thumb {
   color: #000000;
   font-size: 16px;
   font-weight: 500;
+  cursor: pointer;
 }
 
 .post-btns button:nth-child(2)::after {
@@ -1331,6 +1332,111 @@ input[type="range"]::-webkit-slider-thumb {
   width: 20px;
   height: 20px;
   margin-left: 10px;
+}
+
+.comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 64px;
+}
+
+.comment span:nth-child(1) {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.comment span:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #606060;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.comment span:nth-child(2)::before {
+  content: "";
+  background: url("../../assets/filter.svg") no-repeat center;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.comment-add {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+}
+
+.comment-add input {
+  width: 100%;
+  padding-bottom: 4px;
+  outline: 0;
+  border-width: 0 0 1px;
+  border-color: #e5e5e5;
+}
+
+.comment-add input:focus {
+  border-color: #464e5b;
+}
+
+.comment-posted {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+}
+
+.comment-posted .comment-posted-user {
+  color: #030303;
+}
+
+.comment-posted .comment-posted-user h6 {
+  font-size: 14px;
+}
+
+.comment-posted .comment-posted-user p {
+  margin-top: 3px;
+  font-size: 13px;
+}
+
+.likes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 24px;
+}
+
+.likes span {
+  color: #606060;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.likes span::before {
+  content: "";
+  background: url("../../assets/thumb-up.svg") no-repeat center;
+  width: 20px;
+  height: 20px;
+}
+
+.likes span::after {
+  content: "";
+  background: url("../../assets/thumb-down.svg") no-repeat center;
+  width: 20px;
+  height: 20px;
 }
 
 .container {

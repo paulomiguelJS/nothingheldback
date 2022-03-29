@@ -73,7 +73,7 @@
 
   padding: 9px 4px 9px 40px;
 
-  background: $grey-input url("../../assets/search-icon.svg.svg") no-repeat 13px
+  background: $grey-input url("../../assets/search-icon.svg") no-repeat 13px
     center;
 
   &:focus {
@@ -597,7 +597,7 @@ input[type="range"]::-webkit-slider-thumb {
     font-weight: bold;
 
     cursor: pointer;
-    
+
     margin-top: 5px;
   }
 }
@@ -623,22 +623,121 @@ input[type="range"]::-webkit-slider-thumb {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+
     border: none;
     background: none;
     color: $black-dark;
-    
+
     font-size: 16px;
     font-weight: 500;
 
+    cursor: pointer;
     &::after {
       content: "";
-      background: url("../../assets/arrow.svg") no-repeat center; 
+      background: url("../../assets/arrow.svg") no-repeat center;
 
       width: 20px;
       height: 20px;
 
       margin-left: 10px;
+    }
+  }
+}
+
+.comment {
+  display: flex;
+  gap: $gap-6;
+
+  span:nth-child(1) {
+    color: $black-dark;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  span:nth-child(2) {
+    display: flex;
+    align-items: center;
+
+    color: $grey-light;
+    font-size: 16px;
+    cursor: pointer;
+
+
+    &::before {
+      content: "";
+      background: url("../../assets/filter.svg") no-repeat center;
+
+      width: 20px;
+      height: 20px;
+
+      margin-right: 10px;
+    }
+   }
+}
+
+.comment-add {
+  display: flex;
+  align-items: center;
+  gap: $gap-2;
+
+  input {
+    width: 100%;
+    padding-bottom: 4px;
+    outline: 0;
+    border-width: 0 0 1px;
+    border-color: $grey-line;
+  }
+  input:focus {
+    border-color: $grey-regular;
+  }
+}
+
+.comment-posted {
+  display: flex;
+  gap: $gap-2;
+
+  .comment-posted-user {
+    color: $black-regular;
+
+    h6{
+      font-size: 14px;
+    }
+
+    p {
+      margin-top:3px;
+      font-size: 13px;
+    }
+  }
+}
+
+.likes {
+  display: flex;
+  align-items: center;
+  gap: $gap-3;
+
+  span {
+    color: $grey-light;
+    font-size: 12px;
+    
+    cursor: pointer;
+
+
+    &::before {
+      content: "";
+      background: url("../../assets/thumb-up.svg") no-repeat center;
+
+      width: 20px;
+      height: 20px;
+    }
+
+    &::after {
+      content: "";
+      background: url("../../assets/thumb-down.svg") no-repeat center;
+
+      width: 20px;
+      height: 20px;
+
+
     }
   }
 }
