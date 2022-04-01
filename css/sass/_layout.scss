@@ -514,6 +514,10 @@ input[type="range"]::-webkit-slider-thumb {
       padding: 10px 5px;
       margin-bottom: 10px;
 
+      color: $blue-light;
+      font-size: 12px;
+      font-weight: bold;
+
       border: 1px solid $blue-light;
       border-radius: 5px;
 
@@ -521,10 +525,11 @@ input[type="range"]::-webkit-slider-thumb {
 
       cursor: pointer;
 
-      a {
-        color: $blue-light;
-        font-size: 12px;
-        font-weight: bold;
+      transition: background-color 0.3s ease-in-out;
+
+      &:hover {
+        color: $white-regular;
+        background-color: $blue-regular;
       }
     }
 
@@ -617,6 +622,15 @@ input[type="range"]::-webkit-slider-thumb {
     font-weight: bold;
 
     padding: 8px 25px;
+
+    cursor: pointer;
+
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+      color: $blue-light;
+      background-color: $white-regular;
+    }
   }
 
   button:nth-child(2) {
@@ -631,6 +645,9 @@ input[type="range"]::-webkit-slider-thumb {
     font-size: 16px;
     font-weight: 500;
 
+    transition: background-color 0.5s ease-in-out;
+    transition: transform 1s ease;
+
     cursor: pointer;
     &::after {
       content: "";
@@ -640,6 +657,10 @@ input[type="range"]::-webkit-slider-thumb {
       height: 20px;
 
       margin-left: 10px;
+    }
+
+    &:hover {
+      transform: translateX(-2px);
     }
   }
 }
@@ -662,7 +683,6 @@ input[type="range"]::-webkit-slider-thumb {
     font-size: 16px;
     cursor: pointer;
 
-
     &::before {
       content: "";
       background: url("../../assets/filter.svg") no-repeat center;
@@ -672,7 +692,7 @@ input[type="range"]::-webkit-slider-thumb {
 
       margin-right: 10px;
     }
-   }
+  }
 }
 
 .comment-add {
@@ -694,17 +714,21 @@ input[type="range"]::-webkit-slider-thumb {
 
 .comment-posted {
   display: flex;
-  gap: $gap-2;
+  flex-direction: column;
+  gap: $gap-1;
 
   .comment-posted-user {
+    display: flex;
     color: $black-regular;
+    gap: $gap-2;
 
-    h6{
+    h6 {
       font-size: 14px;
+
+      margin: 5px 0 5px 0;
     }
 
     p {
-      margin-top:3px;
       font-size: 13px;
     }
   }
@@ -715,12 +739,13 @@ input[type="range"]::-webkit-slider-thumb {
   align-items: center;
   gap: $gap-3;
 
-  span {
-    color: $grey-light;
-    font-size: 12px;
-    
-    cursor: pointer;
+  color: $grey-light;
+  font-size: 12px;
 
+  span:nth-child(1) {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 
     &::before {
       content: "";
@@ -728,6 +753,8 @@ input[type="range"]::-webkit-slider-thumb {
 
       width: 20px;
       height: 20px;
+
+      margin-right: 10px;
     }
 
     &::after {
@@ -737,7 +764,103 @@ input[type="range"]::-webkit-slider-thumb {
       width: 20px;
       height: 20px;
 
-
+      margin-left: 10px;
     }
+  }
+}
+
+#replies {
+  display: flex;
+  align-items: center;
+
+  color: $blue-light;
+  font-size: 14px;
+  font-weight: 400;
+
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    background: url("../../assets/arrow-down.svg") no-repeat center;
+
+    width: 20px;
+    height: 20px;
+
+    margin-right: 10px;
+  }
+}
+
+.download-title {
+  color: $black-light;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: $poppins;
+}
+
+.download-txt {
+  color: $grey-light;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.download-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 20px 0;
+  width: 90%;
+
+  box-shadow: 0px 0px 1px rgba(12, 26, 75, 0.24),
+    0px 3px 8px -1px rgba(50, 50, 71, 0.05);
+  border-radius: 4px;
+
+  .download-asset {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  li {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 90%;
+    margin-top: 20px;
+
+    &:nth-child(2) {
+      border-top: 1px solid #e0dfdf;
+      border-bottom: 1px solid #e0dfdf;
+      padding: 20px 0;
+    }
+  }
+
+  h4 {
+    color: $black-light;
+    font-size: 16px;
+    font-weight: 900;
+    font-family: $inter;
+
+    margin-left: 20px;
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 4px;
+
+    background: $blue-light;
+
+    padding: 10px;
+
+    font-weight: 500;
+    color: $white-regular;
+
+    img {
+      margin-right: 10px;
+    }
+
   }
 }
