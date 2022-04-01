@@ -648,7 +648,7 @@ img {
   padding: 1rem;
 }
 
-.register > button {
+.register button {
   padding: 5px 15px;
   border-radius: 12px;
   border: none;
@@ -657,11 +657,11 @@ img {
   color: #464e5b;
 }
 
-.register > button:hover {
+.register button:hover {
   opacity: 0.9;
 }
 
-.register > p {
+.register p {
   color: #ffffff;
 }
 
@@ -765,12 +765,12 @@ img {
   cursor: pointer;
 }
 
-.profile > p {
+.profile p {
   font-size: 1rem;
   color: #000000;
 }
 
-.profile > p span {
+.profile p span {
   font-weight: bold;
 }
 
@@ -820,9 +820,6 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1567,6 +1564,9 @@ input[type="range"]::-webkit-slider-thumb {
   font-weight: 900;
   font-family: "Inter", sans-serif;
   margin-left: 20px;
+  -webkit-text-decoration: 2px underline #000000;
+          text-decoration: 2px underline #000000;
+  text-underline-offset: 3px;
 }
 
 .download-list button {
@@ -1586,6 +1586,87 @@ input[type="range"]::-webkit-slider-thumb {
 
 .download-list button img {
   margin-right: 10px;
+}
+
+.apply {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid #49a55d;
+  border-radius: 8px;
+  padding: 30px 0 40px 0;
+}
+
+.apply h4 {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+
+.apply h2 {
+  font-size: 36px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 20px;
+}
+
+.apply p {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 25px;
+  width: 70%;
+  margin-bottom: 20px;
+}
+
+.apply button {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 12px 60px;
+  border: 1px solid #49a55d;
+  border-radius: 4px;
+  background-color: #49a55d;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footer-list-container h6 {
+  color: #1285ff;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.footer-list-container .footer-list li {
+  color: #606060;
+  font-size: 13px;
+  margin-bottom: 10px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.footer-list-container .footer-list li:hover {
+  background-color: #ffc700;
+  border: 1px solid #ffc700;
+  color: #000000;
+  border-radius: 4px;
 }
 
 .container {

@@ -15,7 +15,7 @@
   padding: 1rem;
 }
 
-.register > button {
+.register button {
   padding: 5px 15px;
 
   border-radius: 12px;
@@ -31,7 +31,7 @@
   }
 }
 
-.register > p {
+.register p {
   color: $white-regular;
 }
 
@@ -139,7 +139,7 @@
   }
 }
 
-.profile > p {
+.profile p {
   font-size: 1rem;
   color: $black-dark;
 
@@ -179,7 +179,6 @@
 .aside {
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
 
   width: 30%;
@@ -813,6 +812,7 @@ input[type="range"]::-webkit-slider-thumb {
 
   box-shadow: 0px 0px 1px rgba(12, 26, 75, 0.24),
     0px 3px 8px -1px rgba(50, 50, 71, 0.05);
+
   border-radius: 4px;
 
   .download-asset {
@@ -843,6 +843,9 @@ input[type="range"]::-webkit-slider-thumb {
     font-family: $inter;
 
     margin-left: 20px;
+
+    text-decoration: 2px underline $black-dark;
+    text-underline-offset: 3px;
   }
 
   button {
@@ -861,6 +864,96 @@ input[type="range"]::-webkit-slider-thumb {
     img {
       margin-right: 10px;
     }
-
   }
 }
+
+.apply {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  border: 1px solid $green-regular;
+  border-radius: 8px;
+  padding: 30px 0 40px 0;
+
+  h4 {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: $poppins;
+  }
+
+  h2 {
+    font-size: 36px;
+    font-weight: 400;
+    font-family: $poppins;
+
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 25px;
+
+    width: 70%;
+
+    margin-bottom: 20px;
+  }
+
+  button {
+    font-size: 14px;
+    font-weight: bold;
+    color: $white-regular;
+
+    padding: 12px 60px;
+
+    border: 1px solid $green-regular;
+    border-radius: 4px;
+    background-color: $green-regular;
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-list-container {
+
+  h6 {
+    color: $blue-light;
+    font-size: 16px;
+    font-weight: 700;
+
+    margin-bottom: 10px;
+  }
+
+  .footer-list li {
+    color: $grey-light;
+    font-size: 13px;
+  
+    margin-bottom: 10px;
+  
+    border: 1px solid transparent;
+  
+    cursor: pointer;
+
+    &:hover {
+      background-color: $yellow-regular;
+      border: 1px solid $yellow-regular;
+  
+      color: $black-dark;
+      
+      border-radius: 4px;
+    }
+  }
+
+
+
+
+ 
+ 
+  }
+
