@@ -1695,6 +1695,7 @@ input[type="range"]::-webkit-slider-thumb {
   font-size: 36px;
   font-weight: 400;
   font-family: "Poppins", sans-serif;
+  text-align: center;
   margin-bottom: 20px;
 }
 
@@ -1726,12 +1727,17 @@ input[type="range"]::-webkit-slider-thumb {
   border: 1px solid #49a55d;
 }
 
-footer {
+.footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .footer-list-container h6 {
@@ -1870,6 +1876,74 @@ footer {
             order: -1;
     margin-bottom: 20px 0;
   }
+  .aside {
+    display: none;
+  }
+  .post {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .post .post-down {
+    margin-top: 24px;
+  }
+}
+
+.post-descrip p {
+  font-size: 12px;
+}
+
+.post-descrip-info {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.post-btns button:nth-child(1) {
+  font-size: 10px;
+  font-weight: bold;
+  padding: 8px 10px;
+}
+
+.post-btns button:nth-child(2) {
+  font-size: 14px;
+}
+
+.download-list h4 {
+  font-size: 10px;
+  -webkit-text-decoration: 1px underline #000000;
+          text-decoration: 1px underline #000000;
+  line-height: 20px;
+}
+
+.download-list button {
+  padding: 5px 10px;
+  font-size: 8px;
+}
+
+.footer {
+  text-align: center;
+}
+
+.footer-list-container h6 {
+  margin-top: 10px;
+}
+
+.copy-container {
+  gap: 16px;
+}
+
+.copy-container h4 {
+  font-size: 18px;
+}
+
+.copy-container .desktop {
+  display: none;
 }
 
 .container {

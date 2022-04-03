@@ -54,4 +54,80 @@
     order: -1;
     margin-bottom: 20px 0;
   }
+  
+  .aside {
+    display: none;
+  }
+
+  .post {
+    flex-direction: column;
+    align-items: center;
+
+    .post-down {
+      margin-top: 24px;
+    }
+  }
+}
+
+.post-descrip {
+  p {
+    font-size: 12px;
+  }
+}
+
+.post-descrip-info {
+  flex-direction: column;
+}
+
+.post-btns {
+
+  button:nth-child(1) {
+    font-size: 10px;
+    font-weight: bold;
+
+    padding: 8px 10px;
+  }
+
+  button:nth-child(2) { 
+    font-size: 14px;
+
+  }
+}
+
+.download-list {
+   
+  h4 {
+    font-size: 10px;
+    text-decoration: 1px underline $black-dark;
+    line-height: 20px;
+
+  }
+  
+  button {
+    padding: 5px 10px;
+    font-size: 8px;
+  }
+}
+
+.footer {
+  text-align: center;
+}
+
+.footer-list-container {
+
+  h6 {
+    margin-top: 10px;
+  }
+}
+
+.copy-container {
+  gap: $gap-2;
+  h4 {
+    font-size: 18px;
+  }
+
+  .desktop {
+    display: none;
+  }
+
 }
