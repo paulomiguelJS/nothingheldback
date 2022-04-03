@@ -1,0 +1,57 @@
+@media screen and (max-width: 670px) {
+  :root {
+    font-size: 83.75%;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .register {
+
+    button {
+        font-size: 10px;
+    }
+  }
+  .main-header {
+    flex-direction: column;
+
+    h2 {
+      order: -2;
+      margin-bottom: 10px;
+    }
+  }
+
+  .search {
+    margin: 10px 0 20px 0;
+
+    min-width: 280px;
+  }
+
+  .icons-header {
+    margin: 20px 0;
+
+    img {
+      order: 2;
+    }
+  }
+
+  .datepicker-input {
+    width: 50%;
+    height: 50%;
+  }
+
+  .datepicker-input::-webkit-calendar-picker-indicator {
+    width: 50%;
+    height: 50%;
+  }
+
+  .profile {
+    order: -1;
+    margin-bottom: 20px 0;
+  }
+}

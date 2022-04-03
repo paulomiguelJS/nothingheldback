@@ -9,6 +9,10 @@
   list-style: none;
 }
 
+a:visited {
+  color: black;
+}
+
 img {
   display: block;
 }
@@ -26,6 +30,7 @@ img {
 
 @import "sass/spacing";
 @import "sass/layout";
+@import "sass/responsive";
 
 .container {
   max-width: 1440px;

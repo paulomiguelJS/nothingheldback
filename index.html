@@ -14,8 +14,9 @@
     <title>Nothing Held Back</title>
   </head>
 
+  <!--DESKTOP HEADER-->
   <body>
-    <header>
+    <header class="desktop">
       <div class="register">
         <button>REGISTER NOW</button>
         <p>
@@ -33,8 +34,10 @@
         <div class="icons-header">
           <img src="assets/paper-icon.svg" alt="Icon" />
           <div class="datepicker-toggle">
-            <span class="datepicker-toggle-button"><img src="assets/calendar-icon.svg" alt="Calendar"></span>
-            <input type="date" class="datepicker-input">
+            <span class="datepicker-toggle-button"
+              ><img src="assets/calendar-icon.svg" alt="Calendar"
+            /></span>
+            <input type="date" class="datepicker-input" />
           </div>
         </div>
 
@@ -63,6 +66,46 @@
           <li><a href="">The Community</a></li>
         </ul>
       </nav>
+    </header>
+
+    <!--MOBILE HEADER-->
+
+    <header class="mobile">
+      <div class="register">
+        <button>REGISTER NOW</button>
+        <p>
+          Happy birthday, App Framework! How to build integrations with
+          Contentful
+        </p>
+      </div>
+      <div class="container main-header mt-2">
+        <h2>NHB <span>+</span></h2>
+        <form>
+          <input class="search" type="search" />
+        </form>
+
+        <div>
+          <button class="hire-btn">WE'RE HIRING!</button>
+          <button class="help-btn">NEED HELP?</button>
+        </div>
+
+        <div class="icons-header">
+          <img src="assets/paper-icon.svg" alt="Icon" />
+          <div class="datepicker-toggle">
+            <span class="datepicker-toggle-button"
+              ><img src="assets/calendar-icon.svg" alt="Calendar"
+            /></span>
+            <input type="date" class="datepicker-input" />
+          </div>
+        </div>
+
+        <div class="profile">
+          <p>Welcome Back, <span>Alen </span></p>
+          <div><img src="/assets/arrow-profile.svg" alt="Arrow Profile" /></div>
+          <img src="assets/profile.svg" alt="Profile" />
+        </div>
+      </div>
+      
     </header>
 
     <div class="global-content container mt-5">
@@ -320,7 +363,7 @@
 
         <hr class="bb-grey my-4" />
 
-        <footer>
+        <footer class="container">
           <nav class="footer-list-container">
             <h6>Today NHB</h6>
             <ul class="footer-list">

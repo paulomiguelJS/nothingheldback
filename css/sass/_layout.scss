@@ -8,31 +8,36 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 20px;
 
   background-color: $blue-regular;
 
-  padding: 1rem;
+  padding: 10px;
 }
 
-.register button {
-  padding: 5px 15px;
-
-  border-radius: 12px;
-  border: none;
-
-  cursor: pointer;
-
-  letter-spacing: 1px;
-  color: $grey-regular;
-
-  &:hover {
-    opacity: 0.9;
+.register {
+  button {
+    padding: 5px 15px;
+  
+    border-radius: 12px;
+    border: none;
+  
+    cursor: pointer;
+  
+    letter-spacing: 1px;
+    color: $grey-regular;
+  
+    &:hover {
+      opacity: 0.9;
+    }
   }
-}
-
+} 
 .register p {
   color: $white-regular;
+}
+
+.mobile {
+  display: none;
 }
 
 .main-header {
@@ -151,7 +156,7 @@
   }
   .datepicker-input::-webkit-calendar-picker-indicator {
     position: absolute;
-    left: 0;
+    left: 0px;
     top: 0;
     right: 0px;
 
@@ -165,7 +170,6 @@
 
     z-index: 2;
   }
-  
 
   img {
     cursor: pointer;
@@ -204,9 +208,8 @@
 
     position: relative;
 
-  
     &:after {
-      content: '';
+      content: "";
       position: absolute;
       bottom: -3px;
 
@@ -216,7 +219,7 @@
       width: 0px;
       background: transparent;
 
-      transition: width .5s ease, background-color .5s ease;
+      transition: width 0.5s ease, background-color 0.5s ease;
     }
 
     &:hover:after {
@@ -228,8 +231,6 @@
 
   .nav-list {
     display: flex;
-
-    
 
     img {
       margin-left: 5px;
@@ -343,6 +344,10 @@ input[type="range"]::-webkit-slider-thumb {
 
   .help-img {
     position: relative;
+
+    img:first-child {
+      width: 100%;
+    }
   }
 
   .help-icon {
@@ -1075,6 +1080,7 @@ footer {
 
   .copy-social {
     display: flex;
+    flex-wrap: wrap;
 
     cursor: pointer;
 
