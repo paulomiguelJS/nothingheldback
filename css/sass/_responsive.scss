@@ -177,13 +177,15 @@
 }
 
 .download-list {
-  
-  li {
+
+  width: 100%;
+
+  .download-item {
     gap: $gap-3;
-    
 
     button {
       justify-content: center;
+      margin-left: 20px;
       a {
         text-align: center;
       }
@@ -196,10 +198,7 @@
     line-height: 20px;
   }
 
-  button {
-    padding: 5px 10px;
-    font-size: 12px;
-  }
+ 
 }
 
 .footer {

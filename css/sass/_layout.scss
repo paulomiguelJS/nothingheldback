@@ -899,11 +899,12 @@ input[type="range"]::-webkit-slider-thumb {
     justify-content: center;
   }
 
-  li {
+  .download-item {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+
 
     width: 90%;
     margin-top: 20px;
