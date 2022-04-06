@@ -2021,6 +2021,25 @@ input[type="range"]::-webkit-slider-thumb {
   width: 100%;
 }
 
+.download-list li {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 24px;
+}
+
+.download-list li button {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80%;
+}
+
+.download-list li button a {
+  text-align: center;
+}
+
 .download-list h4 {
   font-size: 10px;
   -webkit-text-decoration: 1px underline #000000;
