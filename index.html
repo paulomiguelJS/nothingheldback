@@ -100,12 +100,36 @@
         </div>
 
         <div class="profile">
-          <p>Welcome Back, <span>Alen </span></p>
-          <div><img src="/assets/arrow-profile.svg" alt="Arrow Profile" /></div>
-          <img src="assets/profile.svg" alt="Profile" />
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <nav class="container nav-container mt-3">
+            <ul class="nav" id="navMenu">
+              <li class="link">My Programs</li>
+              <li class="link">Today NHB</li>
+              <li class="link dropmenu">
+                Traning Calls
+                <img src="assets/arrow-menu-down.svg" alt="Menu Down" />
+              </li>
+              <li class="link">The Roledex</li>
+              <li class="link">Resources</li>
+              <li class="link">Integration Network</li>
+              <li class="link dropmenu">Swipes<img src="assets/arrow-menu-up.svg" alt="Menu Up"></li>
+              <li class="link">Job Board</li>
+              <li class="link">The Community</li>
+            </ul>
+          </nav>
+          <div class="profile-img">
+            <p>Welcome Back, <span>Alen </span></p>
+            <div>
+              <img src="/assets/arrow-profile.svg" alt="Arrow Profile" />
+            </div>
+            <img src="assets/profile.svg" alt="Profile" />
+          </div>
         </div>
       </div>
-      
     </header>
 
     <div class="global-content container mt-1">
@@ -424,18 +448,22 @@
           <div class="copy-social">
             <span>Terms</span>
             <span>Privacy</span>
-            <img src="assets/face-icon.svg" alt="Facebook" />
-            <img src="assets/twitter-icon.svg" alt="Twitter" />
-            <img src="assets/insta-icon.svg" alt="Instagram" />
-            <img src="assets/yout-icon.svg" alt="Youtube" />
-            <img src="assets/link-icon.svg" alt="LinkedIn" />
-            <img src="assets/spoti-icon.svg" alt="Spotify" />
-            <img src="assets/pins-icon.svg" alt="Pinterest" />
-            <img src="assets/sound-icon.svg" alt="SoundCloud" />
+            <div class="social-icons">
+              <img src="assets/face-icon.svg" alt="Facebook" />
+              <img src="assets/twitter-icon.svg" alt="Twitter" />
+              <img src="assets/insta-icon.svg" alt="Instagram" />
+              <img src="assets/yout-icon.svg" alt="Youtube" />
+              <img src="assets/link-icon.svg" alt="LinkedIn" />
+              <img src="assets/spoti-icon.svg" alt="Spotify" />
+              <img src="assets/pins-icon.svg" alt="Pinterest" />
+              <img src="assets/sound-icon.svg" alt="SoundCloud" />
+            </div>
           </div>
         </div>
       </div>
     </div>
+
     <script src="app/app.js"></script>
+    <script src="app/hamburguer-menu.js"></script>
   </body>
 </html>

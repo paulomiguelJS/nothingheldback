@@ -1,3 +1,9 @@
+@media screen and (max-width: 1024px) {
+  .nav li {
+    font-size: 10px;
+  }
+}
+
 @media screen and (max-width: 670px) {
   :root {
     font-size: 83.75%;
@@ -12,9 +18,8 @@
   }
 
   .register {
-
     button {
-        font-size: 10px;
+      font-size: 10px;
     }
   }
   .main-header {
@@ -32,6 +37,9 @@
     min-width: 280px;
   }
 
+  .hire-btn {
+    margin-right: 20px;
+  }
   .icons-header {
     margin: 20px 0;
 
@@ -51,10 +59,86 @@
   }
 
   .profile {
+    display: flex;
+
+    width: 100%;
     order: -1;
+
     margin-bottom: 20px 0;
+    padding: 0 10px;
+
+    .profile-img {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      width: 60%;
+    }
+
+    .bar {
+      display: block;
+      width: 25px;
+      height: 3px;
+      margin: 5px auto;
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+      background-color: $black-dark;
+
+      position: relative;
+      z-index: 999;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      position: fixed;
+      right: -100%;
+      top: 0;
+      z-index: 2;
+
+      background-color: $white-regular;
+      opacity: 0.9;
+
+      height: 100vh;
+      width: 100%;
+
+      transition: all 500ms ease-in-out;
+    }
+
+    .nav li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border-bottom: 1px solid $blue-light;
+
+      width: 50%;
+
+      margin-bottom: 30px;
+      padding-bottom: 5px;
+
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav.active {
+      right: 0;
+      top: 0;
+    }
   }
-  
+
   .aside {
     display: none;
   }
@@ -80,7 +164,6 @@
 }
 
 .post-btns {
-
   button:nth-child(1) {
     font-size: 10px;
     font-weight: bold;
@@ -88,40 +171,39 @@
     padding: 8px 10px;
   }
 
-  button:nth-child(2) { 
+  button:nth-child(2) {
     font-size: 14px;
-
   }
 }
 
 .download-list {
-   
+  width: 100%;
+
   h4 {
     font-size: 10px;
     text-decoration: 1px underline $black-dark;
     line-height: 20px;
-
   }
-  
+
   button {
     padding: 5px 10px;
-    font-size: 8px;
+    font-size: 12px;
   }
 }
 
 .footer {
+  justify-content: center;
   text-align: center;
+  gap: $gap-4;
 }
 
 .footer-list-container {
-
   h6 {
     margin-top: 10px;
   }
 }
 
 .copy-container {
-  gap: $gap-2;
   h4 {
     font-size: 18px;
   }
@@ -130,4 +212,7 @@
     display: none;
   }
 
+  .social-icons {
+    flex-wrap: wrap;
+  }
 }

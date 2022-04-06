@@ -18,20 +18,20 @@
 .register {
   button {
     padding: 5px 15px;
-  
+
     border-radius: 12px;
     border: none;
-  
+
     cursor: pointer;
-  
+
     letter-spacing: 1px;
     color: $grey-regular;
-  
+
     &:hover {
       opacity: 0.9;
     }
   }
-} 
+}
 .register p {
   color: $white-regular;
 }
@@ -188,6 +188,7 @@
 .profile {
   display: flex;
   align-items: center;
+
   cursor: pointer;
 
   img {
@@ -220,13 +221,17 @@
       background: transparent;
 
       transition: width 0.5s ease, background-color 0.5s ease;
-    }
 
+     
+    }
+   
     &:hover:after {
       width: 100%;
 
       background: $black-dark;
     }
+
+   
   }
 
   .nav-list {
@@ -1083,23 +1088,29 @@ input[type="range"]::-webkit-slider-thumb {
 
   .copy-social {
     display: flex;
-    flex-wrap: wrap;
-
+    align-items: center;
     cursor: pointer;
 
-    gap: $gap-3;
+    .social-icons {
+      display: flex;
+
+      gap: $gap-3;
+
+      margin-left: 20px;
+
+      img {
+        transition: transform 1s ease;
+
+        &:hover {
+          transform: translateY(-3px);
+        }
+      }
+    }
 
     span {
       color: $grey-light;
       font-size: 14px;
-    }
-
-    img {
-      transition: transform 1s ease;
-
-      &:hover {
-        transform: translateY(-3px);
-      }
+      margin: 0 20px;
     }
   }
 }
