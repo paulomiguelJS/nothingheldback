@@ -2019,10 +2019,6 @@ input[type="range"]::-webkit-slider-thumb {
   font-size: 14px;
 }
 
-.download-list {
-  width: 100%;
-}
-
 .download-list li {
   gap: 24px;
 }
@@ -2031,7 +2027,6 @@ input[type="range"]::-webkit-slider-thumb {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 90%;
 }
 
 .download-list li button a {

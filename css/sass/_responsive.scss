@@ -177,14 +177,13 @@
 }
 
 .download-list {
-    width: 100%;
+  
   li {
     gap: $gap-3;
     
 
     button {
       justify-content: center;
-      width: 90%;
       a {
         text-align: center;
       }
