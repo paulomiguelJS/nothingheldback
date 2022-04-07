@@ -8,18 +8,9 @@ hamburger.addEventListener("click", () => {
 
 nav.forEach((link) =>
   link.addEventListener("click", (event) => {
-
-    const html = document.documentElement;
-
     if (nav === submenu) {
       navMenu.classList.add("active");
       hamburger.classList.remove("active");
     }
-
-    if(event.target === html && event.target !== nav) {
-      navMenu.classList.remove("active");
-      hamburger.classList.remove("active");
-    }
   })
 );
-
