@@ -835,18 +835,6 @@ img {
           align-items: center;
 }
 
-.nav .nav-list {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.nav .nav-list img {
-  margin-left: 5px;
-  margin-bottom: 3px;
-}
-
 .nav li {
   font-size: 1rem;
   font-weight: 400;
@@ -871,27 +859,59 @@ img {
   background: #000000;
 }
 
-.nav li .dropdown-menu {
+.nav .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+}
+
+.nav [data-dropdown] {
+  position: relative;
+}
+
+.nav [data-dropdown] .dropdown-menu {
   display: none;
-  -webkit-animation: show-up 3s forwards;
-          animation: show-up 3s forwards;
+}
+
+.nav [data-dropdown].show .dropdown-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav .dropdown-menu {
   position: absolute;
   top: 10px;
   z-index: 2;
   background: #ffffff;
   margin-top: 20px;
-  padding: 10px 30px;
+  padding: 10px 20px;
   border-radius: 4px;
   -webkit-box-shadow: 0px 0px 1px rgba(12, 26, 75, 0.24), 0px 3px 8px -1px rgba(50, 50, 71, 0.3);
           box-shadow: 0px 0px 1px rgba(12, 26, 75, 0.24), 0px 3px 8px -1px rgba(50, 50, 71, 0.3);
+  -webkit-animation: show-up 1s forwards;
+          animation: show-up 1s forwards;
 }
 
-.nav li .dropdown-menu.show {
-  display: block;
+.nav .dropdown-menu li {
+  margin-top: 20px;
 }
 
-.nav li .dropdown-menu li {
-  margin-top: 10px;
+.nav .dropdown-menu li:hover:after {
+  width: 100%;
+  height: 1px;
+  background: #000000;
 }
 
 @-webkit-keyframes show-up {
@@ -1999,7 +2019,7 @@ input[type="range"]::-webkit-slider-thumb {
     -webkit-transition: all 500ms ease-in-out;
     transition: all 500ms ease-in-out;
   }
-  .profile .nav li {
+  .profile li {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

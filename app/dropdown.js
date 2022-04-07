@@ -1,4 +1,4 @@
-const dropdownMenus = document.querySelectorAll(".nav-list");
+const dropdownMenus = document.querySelectorAll("[data-dropdown]");
 
 dropdownMenus.forEach((menu) => {
   menu.addEventListener("click", handleClick);
@@ -7,5 +7,5 @@ dropdownMenus.forEach((menu) => {
 function handleClick(event) {
   event.preventDefault();
   this.classList.toggle("show");
-  console.log(event.target.parentElement.nextElementSibling)
+  console.log(event.target)
 }
