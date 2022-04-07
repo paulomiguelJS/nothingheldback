@@ -1,39 +1,25 @@
 const hamburger = document.querySelector(".hamburger");
-const nav = document.querySelector("#navMenu");
-const links = document.querySelectorAll(".link");
-
-const submenu = document.querySelectorAll("#submenu");
-const dropdownItems = document.querySelectorAll(".dropdown-menu");
+const nav = document.querySelectorAll(".nav-container");
 
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
   navMenu.classList.toggle("active");
 });
 
-links.forEach((link) =>
-  link.addEventListener("click", () => {
+nav.forEach((link) =>
+  link.addEventListener("click", (event) => {
+
+    const html = document.documentElement;
+
+    if (nav === submenu) {
       navMenu.classList.add("active");
       hamburger.classList.remove("active");
+    }
+
+    if(event.target === html && event.target !== nav) {
+      navMenu.classList.remove("active");
+      hamburger.classList.remove("active");
+    }
   })
 );
-
-
-function outsideClick(element, callback) {
-  const html = document.documentElement;
-  const outside = "data-outside";
-
-  if (!element.hasAttribute(outside)) {
-    html.addEventListener("click", handleOutsideClick);
-    element.setAttribute(outside, true);
-  }
-
-  function handleOutsideClick(event) {
-    if (!element.contains(event.target)) {
-      element.removeAttribute(outside);
-      html.removeEventListener("click", handleOutsideClick);
-      callback();
-    }
-  }
-}
-
 
