@@ -122,7 +122,6 @@
             <span class="bar"></span>
           </div>
 
-       
           <nav class="container nav-container mt-3">
             <ul class="nav" id="navMenu">
               <li class="link">My Programs</li>
@@ -499,14 +498,26 @@
         </div>
       </div>
     </div>
+    <button id="btn-modal"><img src="assets/profile-help.svg" alt="" /></button>
 
-    <div class="call-help modal"><img src="assets/profile-help.svg" alt="Support"></div>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <header class="modal-header">
+          <div class="modal-title">
+            <h3>NHB <span>+</span></h3>
+            <p>Welcome to NHB chat</p>
+          </div>
+          <span class="close">&times;</span>
+        </header>
+        <h5>Alen Sulfuric</h5>
+        <p>Hi, my nbame is Alen. How can I help you today?</p>
+      </div>
+      <input class="chat-input" type="text" placeholder="Write a message...">
+    </div>
 
     <script src="app/app.js"></script>
     <script src="app/hamburguer-menu.js"></script>
     <script src="app/dropdown.js"></script>
     <script src="app/modal.js"></script>
-
-
   </body>
 </html>

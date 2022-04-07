@@ -1917,16 +1917,110 @@ input[type="range"]::-webkit-slider-thumb {
   margin: 0 20px;
 }
 
-.call-help {
+#btn-modal {
   position: fixed;
-  z-index: 3;
-  bottom: 10px;
-  right: 10px;
+  /* Stay in place */
+  right: 20px;
+  bottom: 20px;
+  border: none;
+  background-color: transparent;
   cursor: pointer;
 }
 
-.call-help img {
+#btn-modal img {
   width: 50px;
+}
+
+.modal {
+  display: block;
+  position: fixed;
+  z-index: 3;
+  right: 0;
+  bottom: 20px;
+  width: 250px;
+  height: 300px;
+  overflow: auto;
+  border: 1px solid red;
+  background-color: #ffffff;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 0px 1px rgba(12, 26, 75, 0.24), 0px 3px 8px -1px rgba(50, 50, 71, 0.3);
+          box-shadow: 0px 0px 1px rgba(12, 26, 75, 0.24), 0px 3px 8px -1px rgba(50, 50, 71, 0.3);
+}
+
+/* Modal Content/Box */
+.modal-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 1px solid red;
+  background-color: #fefefe;
+}
+
+.modal-content .modal-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #49a55d;
+  padding: 8px 0;
+}
+
+.modal-content .modal-header h3 {
+  margin-bottom: 10px;
+}
+
+.modal-content .modal-header span:nth-child(1) {
+  color: #ffc700;
+}
+
+.modal-content h5 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #49a55d;
+  margin: 20px 0 10px 0;
+  padding: 0 8px;
+}
+
+.modal-content p {
+  font-size: 14px;
+  padding: 0 8px;
+}
+
+.chat-input {
+  margin: 100px 0 0 10px;
+  width: 90%;
+  padding: 12px 5px;
+  border: none;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 0px 1px rgba(12, 26, 75, 0.24), 0px 3px 8px -1px rgba(50, 50, 71, 0.8);
+          box-shadow: 0px 0px 1px rgba(12, 26, 75, 0.24), 0px 3px 8px -1px rgba(50, 50, 71, 0.8);
+  background: #f4f4f4 url("../../assets/search-icon.svg") no-repeat 13px;
+  background-position: top 12px right 10px;
+}
+
+.chat-input:focus {
+  outline: 1px solid #49a55d;
+}
+
+.close {
+  color: #ffc700;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1024px) {

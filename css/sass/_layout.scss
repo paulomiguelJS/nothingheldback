@@ -1171,21 +1171,101 @@ input[type="range"]::-webkit-slider-thumb {
   }
 }
 
-.call-help {
-  position: fixed;
-  z-index: 3;
-  bottom: 10px;
-  right: 10px;
+#btn-modal {
+  position: fixed; /* Stay in place */
+  right: 20px;
+  bottom: 20px;
+
+  border: none;
+  background-color: transparent;
 
   cursor: pointer;
 
   img {
     width: 50px;
-
   }
 }
 
+.modal {
+  display: block;
+  position: fixed;
+  z-index: 3;
+  right: 0;
+  bottom: 20px;
 
+  width: 250px;
+  height: 300px;
 
+  overflow: auto;
+  border: 1px solid red;
 
+  background-color: $white-regular;
+  border-radius: 4px;
+  box-shadow: 0px 0px 1px rgba(12, 26, 75, 0.24),
+    0px 3px 8px -1px rgba(50, 50, 71, 0.3);
+}
 
+/* Modal Content/Box */
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid red;
+  background-color: #fefefe;
+
+  .modal-header {
+    display: flex;
+    justify-content: space-around;
+    background-color: $green-regular;
+    padding: 8px 0;
+
+    h3 {
+      margin-bottom: 10px;
+    }
+    span:nth-child(1) {
+      color: $yellow-regular;
+    }
+  }
+
+  h5 {
+    font-size: 16px;
+    font-weight: bold;
+    color: $green-regular;
+    margin: 20px 0 10px 0;
+    padding: 0 8px;
+  }
+
+  p {
+    font-size: 14px;
+    padding: 0 8px;
+  }
+}
+.chat-input {
+  margin: 100px 0 0 10px;
+  width: 90%;
+  padding: 12px 5px;
+
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 0px 1px rgba(12, 26, 75, 0.24),
+    0px 3px 8px -1px rgba(50, 50, 71, 0.8);
+
+  background: $grey-input url("../../assets/search-icon.svg") no-repeat 13px;
+  background-position: top 12px right 10px;
+  &:focus {
+    outline: 1px solid $green-regular;
+  }
+}
+.close {
+  color: $yellow-regular;
+
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
