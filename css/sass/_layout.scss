@@ -233,7 +233,15 @@
   .nav-list {
     display: flex;
 
-    gap: $gap-1;
+    .nav-list-title {
+      display: flex;
+      gap: $gap-1;
+
+      h3 {
+        font-size: 16px;
+        font-weight: 500;
+      }
+    }
   }
 
   [data-dropdown] {
