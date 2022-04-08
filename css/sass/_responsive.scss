@@ -61,6 +61,8 @@
   .profile {
     display: flex;
 
+    background-color: $white-regular;
+
     width: 100%;
     order: -1;
 
@@ -74,11 +76,26 @@
 
       width: 60%;
     }
+    
+.hamburger {
+  position: fixed;
+  background-color: $white-regular;
 
+  z-index: 4 ;
+
+  padding: 5px;
+
+  border-radius: 4px;
+  box-shadow: 0px 0px 1px rgba(12, 26, 75, 0.24),
+  0px 3px 8px -1px rgba(50, 50, 71, 0.05);
+
+}
     .bar {
       display: block;
+
       width: 25px;
       height: 3px;
+
       margin: 5px auto;
       -webkit-transition: all 0.3s ease;
       transition: all 0.3s ease;
@@ -93,7 +110,6 @@
       justify-content: center;
       align-items: center;
       flex-direction: column;
-
       position: fixed;
       right: -100%;
       top: 0;
@@ -210,8 +226,6 @@
     text-decoration: 1px underline $black-dark;
     line-height: 20px;
   }
-
- 
 }
 
 .footer {
@@ -245,6 +259,22 @@
   height: 250px;
 
   .chat-input {
-    margin: 55px 0 0 10px; 
+    margin: 90px 0 0 10px; 
     }
+}
+
+.modal-content {
+ 
+  h5 {
+    font-size: 12px;
+    font-weight: bold;
+    color: $green-regular;
+    margin: 10px 0 5px 0;
+    padding: 0 8px;
+  }
+
+  p {
+    font-size: 10px;
+    padding: 0 8px;
+  }
 }
