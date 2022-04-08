@@ -1187,22 +1187,34 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 .modal {
-  display: block;
+  display: none;
   position: fixed;
   z-index: 3;
-  right: 0;
+  right: 5px;
   bottom: 20px;
 
-  width: 250px;
+  max-width: 250px;
+  width: 100%;
   height: 300px;
 
   overflow: auto;
-  border: 1px solid red;
 
   background-color: $white-regular;
   border-radius: 4px;
   box-shadow: 0px 0px 1px rgba(12, 26, 75, 0.24),
     0px 3px 8px -1px rgba(50, 50, 71, 0.3);
+
+    animation: show-up 1s forwards;
+    @keyframes show-up {
+      from {
+        opacity: 0;
+        transform: translate3d(30px, 30px, -30px);
+      }
+      to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+      }
+    }
 }
 
 /* Modal Content/Box */
@@ -1210,7 +1222,6 @@ input[type="range"]::-webkit-slider-thumb {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 1px solid red;
   background-color: #fefefe;
 
   .modal-header {
@@ -1256,15 +1267,18 @@ input[type="range"]::-webkit-slider-thumb {
     outline: 1px solid $green-regular;
   }
 }
-.close {
+
+#close {
   color: $yellow-regular;
+
+  cursor: pointer;
 
   font-size: 28px;
   font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+#close:hover,
+#close:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
