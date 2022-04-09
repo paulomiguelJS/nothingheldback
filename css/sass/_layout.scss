@@ -272,7 +272,7 @@
     box-shadow: 0px 0px 1px rgba(12, 26, 75, 0.24),
       0px 3px 8px -1px rgba(50, 50, 71, 0.3);
 
-    animation: show-up 1s forwards;
+    animation: show-down 1s forwards;
 
     li {
       margin-top: 20px;
@@ -285,10 +285,10 @@
       }
     }
 
-    @keyframes show-up {
+    @keyframes show-down {
       from {
         opacity: 0;
-        transform: translate3d(0, 30px, 0);
+        transform: translate3d(0, -30px, 0);
       }
       to {
         opacity: 1;
