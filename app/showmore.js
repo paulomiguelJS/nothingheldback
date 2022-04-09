@@ -7,6 +7,5 @@ readMore.addEventListener('click', (e) => {
         readMore.innerHTML = 'Show less';
     } else {
         readMore.innerHTML = 'Show more...';
-        
     }
 })
