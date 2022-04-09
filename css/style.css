@@ -2277,104 +2277,85 @@ input[type="range"]::-webkit-slider-thumb {
   .post .post-down {
     margin-top: 24px;
   }
-}
-
-.post-descrip p {
-  font-size: 12px;
-}
-
-.post-descrip-info {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.post-btns button:nth-child(1) {
-  font-size: 10px;
-  font-weight: bold;
-  padding: 8px 10px;
-}
-
-.post-btns button:nth-child(2) {
-  font-size: 14px;
-}
-
-.download-list {
-  width: 100%;
-}
-
-.download-list .download-asset h4 {
-  font-size: 10px;
-}
-
-.download-list .download-item {
-  gap: 24px;
-}
-
-.download-list .download-item button {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-left: 20px;
-}
-
-.download-list .download-item button a {
-  text-align: center;
-}
-
-.download-list h4 {
-  font-size: 10px;
-  -webkit-text-decoration: 1px underline #000000;
-          text-decoration: 1px underline #000000;
-  line-height: 20px;
-}
-
-.footer {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-  gap: 32px;
-}
-
-.footer-list-container h6 {
-  margin-top: 10px;
-}
-
-.copy-container h4 {
-  font-size: 18px;
-}
-
-.copy-container .desktop {
-  display: none;
-}
-
-.copy-container .social-icons {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.modal {
-  width: 200px;
-  height: 250px;
-}
-
-.modal .chat-input {
-  margin: 90px 0 0 10px;
-}
-
-.modal-content h5 {
-  font-size: 12px;
-  font-weight: bold;
-  color: #49a55d;
-  margin: 10px 0 5px 0;
-  padding: 0 8px;
-}
-
-.modal-content p {
-  font-size: 10px;
-  padding: 0 8px;
+  .post-descrip p {
+    font-size: 12px;
+  }
+  .post-descrip-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .post-btns button:nth-child(1) {
+    font-size: 10px;
+    font-weight: bold;
+    padding: 8px 10px;
+  }
+  .post-btns button:nth-child(2) {
+    font-size: 14px;
+  }
+  .download-list {
+    width: 100%;
+  }
+  .download-list .download-asset h4 {
+    font-size: 10px;
+  }
+  .download-list .download-item {
+    gap: 24px;
+  }
+  .download-list .download-item button {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 20px;
+  }
+  .download-list .download-item button a {
+    text-align: center;
+  }
+  .download-list h4 {
+    font-size: 10px;
+    -webkit-text-decoration: 1px underline #000000;
+            text-decoration: 1px underline #000000;
+    line-height: 20px;
+  }
+  .footer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    gap: 32px;
+  }
+  .footer-list-container h6 {
+    margin-top: 10px;
+  }
+  .copy-container h4 {
+    font-size: 18px;
+  }
+  .copy-container .desktop {
+    display: none;
+  }
+  .copy-container .social-icons {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .modal {
+    width: 200px;
+    height: 250px;
+  }
+  .modal .chat-input {
+    margin: 90px 0 0 10px;
+  }
+  .modal-content h5 {
+    font-size: 12px;
+    font-weight: bold;
+    color: #49a55d;
+    margin: 10px 0 5px 0;
+    padding: 0 8px;
+  }
+  .modal-content p {
+    font-size: 10px;
+    padding: 0 8px;
+  }
 }
 
 .container {
