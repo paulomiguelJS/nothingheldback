@@ -1414,7 +1414,8 @@ input[type="range"]::-webkit-slider-thumb {
   content: "";
   width: 15%;
   height: 100%;
-  background: url("../../assets/correct.svg") no-repeat center;
+  margin-left: 3px;
+  background: url("../../assets/user-post.svg") no-repeat center;
 }
 
 .post-descrip .post-descrip-user span {
