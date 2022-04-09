@@ -1887,6 +1887,10 @@ input[type="range"]::-webkit-slider-thumb {
   padding: 0 20px;
 }
 
+.copy-container .mobile {
+  display: none;
+}
+
 .copy-container h4 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2333,6 +2337,11 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .copy-container .desktop {
     display: none;
+  }
+  .copy-container .mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .copy-container .social-icons {
     -ms-flex-wrap: wrap;

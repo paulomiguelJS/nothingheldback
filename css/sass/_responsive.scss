@@ -269,6 +269,9 @@
     display: none;
   }
 
+  .mobile  {
+    display: flex;
+  }
   .social-icons {
     flex-wrap: wrap;
   }
@@ -284,7 +287,6 @@
 }
 
 .modal-content {
- 
   h5 {
     font-size: 12px;
     font-weight: bold;
