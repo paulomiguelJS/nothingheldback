@@ -2084,6 +2084,9 @@ input[type="range"]::-webkit-slider-thumb {
   .nav li {
     font-size: 10px;
   }
+  .nav-list-title #nav-title {
+    font-size: 10px;
+  }
 }
 
 @media screen and (max-width: 670px) {

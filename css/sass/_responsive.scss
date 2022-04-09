@@ -1,6 +1,16 @@
 @media screen and (max-width: 1024px) {
-  .nav li {
+  .nav {
+    li {
+      font-size: 10px;
+    }
+    
+  }
+  .nav-list-title {
+
+    #nav-title{
     font-size: 10px;
+
+    }
   }
 }
 
