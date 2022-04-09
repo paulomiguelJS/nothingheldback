@@ -1711,6 +1711,11 @@ input[type="range"]::-webkit-slider-thumb {
           justify-content: center;
 }
 
+.download-list .download-asset h4 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
 .download-list .download-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2296,6 +2301,10 @@ input[type="range"]::-webkit-slider-thumb {
 
 .download-list {
   width: 100%;
+}
+
+.download-list .download-asset h4 {
+  font-size: 12px;
 }
 
 .download-list .download-item {

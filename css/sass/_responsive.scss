@@ -223,6 +223,12 @@
 
   width: 100%;
 
+  .download-asset {
+    h4 {
+      font-size: 12px;
+    }
+  }
+
   .download-item {
     gap: $gap-3;
 
